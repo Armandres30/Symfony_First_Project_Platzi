@@ -1,0 +1,32 @@
+#Build web app
+symfony new --webapp my_project
+#Build microservice
+symfony new my_project
+
+# Install composer symfony components as example symfony/asset
+composer require symfony/asset ###or also other components
+
+# Symfony project setter
+symfony new simple
+# Sympfony create new project with name
+symfony new webapp --webapp
+# Symfony create demo project (functional for tests)
+symfony new demo --demo
+# Symfony create full project (EN DESUSO, DEPRECATED)
+symfony new full --full
+
+#Execute symfony project and serve to local in browser
+cd simple
+symfony serve
+
+### Symfony Architecture
+# assets/ contains frontend, (CSS & JS & Images) crud system (source code)
+# config/ config files to adapt components
+# migrations/ versions system of tables update
+# public/ main files (final code)
+# src/ main app core: Controller, Entity and Repository
+# templates/
+# translations/
+# var/ cache files
+# vendor/ all php packages and projects 
+# .env/ env  associated to machine device
